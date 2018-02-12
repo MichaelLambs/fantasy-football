@@ -85,5 +85,10 @@
 }
 
 .bdr-left {
-  border-left: 1rem solid #363942;
+  border-left: .5rem solid #363942;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
 }
