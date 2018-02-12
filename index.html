@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pick Your Team</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <section>
+        <div class="search-section">
+            <!-- <div class="container">
+                <div class="row justify-content-center"> -->
+                    <div class="search-holder">
+                            <h1>Pick Your <u>OWN</u> Team</h1>
+                        <form class="form-inline" onsubmit="app.controllers.nflCtrl.search(event)">
+                            <div class="form-group">
+                                <label for="" class="sr-only">Player Name</label>
+                                <input name="name" type="text" class="form-control" placeholder="ie Tom Brady, QB, Tom, or NE">
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </form>
+                        <div id="no-results">
+                            <p>Search for player by name, position, or team</p>
+                        </div>
+                    </div>
+               <!--  </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section>
+        <div class="main-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 bdr-left">
+                        <!-- <div class="my-team-container"> -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Your Team Roster</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="my-team" class="myteam-holder mar-l mar-r">
+
+                                        <!-- <div class="col-md-4">
+                                                    <div class="my-team-player">
+                                                        <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" alt="">
+                                                        <h4>Name:</h4>
+                                                        <h5>Position: </h5>
+                                                        <h5>Team: </h5>
+                                                    </div>
+                                                </div> -->
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 bdr-left">
+                            <div class="search-results mar-l">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>Search Results</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="list-group results" id="search-element">
+                                            <!-- <li class="list-group-item"><span>Tom Brady</span>, <span>Patriots</span>, <span>QB</span></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="app/nfl-service.js"></script>
+    <script src="app/nfl-control.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
